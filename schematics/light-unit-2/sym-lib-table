@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name light-unit-2-library)(type Legacy)(uri ${KIPRJMOD}/light-unit-2-library.lib)(options "")(descr ""))
+)

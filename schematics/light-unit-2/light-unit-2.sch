@@ -1,0 +1,254 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:VCC #PWR?
+U 1 1 64D30CF8
+P 1800 950
+F 0 "#PWR?" H 1800 800 50  0001 C CNN
+F 1 "VCC" H 1815 1123 50  0000 C CNN
+F 2 "" H 1800 950 50  0001 C CNN
+F 3 "" H 1800 950 50  0001 C CNN
+	1    1800 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64D30E73
+P 1800 1200
+F 0 "#PWR?" H 1800 950 50  0001 C CNN
+F 1 "GND" H 1805 1027 50  0000 C CNN
+F 2 "" H 1800 1200 50  0001 C CNN
+F 3 "" H 1800 1200 50  0001 C CNN
+	1    1800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 64D315FC
+P 1250 1000
+F 0 "J?" H 1358 1089 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1358 1090 50  0001 C CNN
+F 2 "" H 1250 1000 50  0001 C CNN
+F 3 "~" H 1250 1000 50  0001 C CNN
+	1    1250 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 1000 1800 1000
+Wire Wire Line
+	1800 1000 1800 950 
+Wire Wire Line
+	1450 1100 1800 1100
+Wire Wire Line
+	1800 1100 1800 1200
+$Comp
+L Connector:Conn_01x06_Male J?
+U 1 1 64D3266B
+P 1250 2250
+F 0 "J?" H 1358 2539 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 1358 2540 50  0001 C CNN
+F 2 "" H 1250 2250 50  0001 C CNN
+F 3 "~" H 1250 2250 50  0001 C CNN
+	1    1250 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 64D33754
+P 1800 1800
+F 0 "#PWR?" H 1800 1650 50  0001 C CNN
+F 1 "+5V" H 1815 1973 50  0000 C CNN
+F 2 "" H 1800 1800 50  0001 C CNN
+F 3 "" H 1800 1800 50  0001 C CNN
+	1    1800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64D348EB
+P 1800 2750
+F 0 "#PWR?" H 1800 2500 50  0001 C CNN
+F 1 "GND" H 1805 2577 50  0000 C CNN
+F 2 "" H 1800 2750 50  0001 C CNN
+F 3 "" H 1800 2750 50  0001 C CNN
+	1    1800 2750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1450 2150
+Text GLabel 1450 2050 2    50   Input ~ 0
+ID
+Wire Wire Line
+	1450 2450 1800 2450
+Wire Wire Line
+	1800 2450 1800 1800
+Wire Wire Line
+	1450 2550 1800 2550
+Wire Wire Line
+	1800 2550 1800 2750
+Text GLabel 1450 2250 2    50   Input ~ 0
+Fan
+Text GLabel 1450 2350 2    50   Input ~ 0
+LED
+Text GLabel 10250 1400 0    50   Input ~ 0
+ID
+$Comp
+L Device:R R?
+U 1 1 64D358BA
+P 10350 1150
+F 0 "R?" H 10420 1196 50  0000 L CNN
+F 1 "R" H 10420 1105 50  0000 L CNN
+F 2 "" V 10280 1150 50  0001 C CNN
+F 3 "~" H 10350 1150 50  0001 C CNN
+	1    10350 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 64D36410
+P 10350 900
+F 0 "#PWR?" H 10350 750 50  0001 C CNN
+F 1 "+5V" H 10365 1073 50  0000 C CNN
+F 2 "" H 10350 900 50  0001 C CNN
+F 3 "" H 10350 900 50  0001 C CNN
+	1    10350 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 64D370A1
+P 10350 1650
+F 0 "R?" H 10420 1696 50  0000 L CNN
+F 1 "R" H 10420 1605 50  0000 L CNN
+F 2 "" V 10280 1650 50  0001 C CNN
+F 3 "~" H 10350 1650 50  0001 C CNN
+	1    10350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64D37199
+P 10350 1900
+F 0 "#PWR?" H 10350 1650 50  0001 C CNN
+F 1 "GND" H 10355 1727 50  0000 C CNN
+F 2 "" H 10350 1900 50  0001 C CNN
+F 3 "" H 10350 1900 50  0001 C CNN
+	1    10350 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 1400 10350 1400
+Wire Wire Line
+	10350 1400 10350 1300
+Wire Wire Line
+	10350 1500 10350 1400
+Connection ~ 10350 1400
+Wire Wire Line
+	10350 1800 10350 1900
+Wire Wire Line
+	10350 1000 10350 900 
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 64D3BB1E
+P 6600 1000
+F 0 "J?" H 6572 974 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 6572 883 50  0000 R CNN
+F 2 "" H 6600 1000 50  0001 C CNN
+F 3 "~" H 6600 1000 50  0001 C CNN
+	1    6600 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 64D3C534
+P 5950 800
+F 0 "#PWR?" H 5950 650 50  0001 C CNN
+F 1 "VCC" H 5965 973 50  0000 C CNN
+F 2 "" H 5950 800 50  0001 C CNN
+F 3 "" H 5950 800 50  0001 C CNN
+	1    5950 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64D3D34D
+P 5950 1800
+F 0 "#PWR?" H 5950 1550 50  0001 C CNN
+F 1 "GND" H 5955 1627 50  0000 C CNN
+F 2 "" H 5950 1800 50  0001 C CNN
+F 3 "" H 5950 1800 50  0001 C CNN
+	1    5950 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel 5150 1500 0    50   Input ~ 0
+Fan
+$Comp
+L Device:R R?
+U 1 1 64D3D73F
+P 5400 1500
+F 0 "R?" V 5607 1500 50  0000 C CNN
+F 1 "R" V 5516 1500 50  0000 C CNN
+F 2 "" V 5330 1500 50  0001 C CNN
+F 3 "~" H 5400 1500 50  0001 C CNN
+	1    5400 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 64D40B66
+P 5850 1500
+F 0 "Q?" H 6041 1546 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 6041 1455 50  0000 L CNN
+F 2 "" H 6050 1600 50  0001 C CNN
+F 3 "~" H 5850 1500 50  0001 C CNN
+	1    5850 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1500 5250 1500
+Wire Wire Line
+	5550 1500 5650 1500
+Wire Wire Line
+	5950 1700 5950 1800
+$Comp
+L Diode:1N4001 D?
+U 1 1 64D4310A
+P 5950 1050
+F 0 "D?" V 5904 1130 50  0000 L CNN
+F 1 "1N4001" V 5995 1130 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5950 875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5950 1050 50  0001 C CNN
+	1    5950 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 1000 6200 1000
+Wire Wire Line
+	6200 1000 6200 900 
+Wire Wire Line
+	6200 900  5950 900 
+Wire Wire Line
+	5950 900  5950 800 
+Connection ~ 5950 900 
+Wire Wire Line
+	5950 1200 5950 1300
+Wire Wire Line
+	5950 1200 6200 1200
+Wire Wire Line
+	6200 1200 6200 1100
+Wire Wire Line
+	6200 1100 6400 1100
+Connection ~ 5950 1200
+$EndSCHEMATC

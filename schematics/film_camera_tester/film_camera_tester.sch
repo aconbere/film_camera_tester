@@ -1,0 +1,720 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x09_Male J1
+U 1 1 64D28067
+P 2400 2600
+F 0 "J1" H 2508 3089 50  0000 C CNN
+F 1 "Conn_01x09_Male" H 2508 3090 50  0001 C CNN
+F 2 "" H 2400 2600 50  0001 C CNN
+F 3 "~" H 2400 2600 50  0001 C CNN
+	1    2400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 64D299DE
+P 3000 3250
+F 0 "#PWR04" H 3000 3000 50  0001 C CNN
+F 1 "GND" H 3005 3077 50  0000 C CNN
+F 2 "" H 3000 3250 50  0001 C CNN
+F 3 "" H 3000 3250 50  0001 C CNN
+	1    3000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 64D29EE9
+P 3000 1800
+F 0 "#PWR03" H 3000 1650 50  0001 C CNN
+F 1 "VCC" H 3015 1973 50  0000 C CNN
+F 2 "" H 3000 1800 50  0001 C CNN
+F 3 "" H 3000 1800 50  0001 C CNN
+	1    3000 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2200 3000 2200
+Wire Wire Line
+	3000 2200 3000 1800
+Wire Wire Line
+	2600 2300 3000 2300
+Wire Wire Line
+	3000 2300 3000 3250
+Text GLabel 2600 2400 2    50   Input ~ 0
+SW
+Text GLabel 2600 2500 2    50   Input ~ 0
+DT
+Text GLabel 2600 2600 2    50   Input ~ 0
+CLK
+Text GLabel 2600 2700 2    50   Input ~ 0
+Mode
+Text GLabel 2600 2800 2    50   Input ~ 0
+Menu
+Text GLabel 2600 2900 2    50   Input ~ 0
+Start
+Text GLabel 2600 3000 2    50   Input ~ 0
+Stop
+$Comp
+L Device:Rotary_Encoder_Switch SW4
+U 1 1 64D2ABE9
+P 6500 2050
+F 0 "SW4" H 6500 2325 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 6500 2326 50  0001 C CNN
+F 2 "" H 6350 2210 50  0001 C CNN
+F 3 "~" H 6500 2310 50  0001 C CNN
+	1    6500 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 64D2BDB0
+P 5500 1950
+F 0 "R7" V 5293 1950 50  0000 C CNN
+F 1 "10K" V 5384 1950 50  0000 C CNN
+F 2 "" V 5430 1950 50  0001 C CNN
+F 3 "~" H 5500 1950 50  0001 C CNN
+	1    5500 1950
+	0    1    1    0   
+$EndComp
+Text GLabel 4950 1950 0    50   Input ~ 0
+DT
+$Comp
+L Device:C_Small C4
+U 1 1 64D2D315
+P 5150 2250
+F 0 "C4" H 5242 2296 50  0000 L CNN
+F 1 "10nF" H 5242 2205 50  0000 L CNN
+F 2 "" H 5150 2250 50  0001 C CNN
+F 3 "~" H 5150 2250 50  0001 C CNN
+	1    5150 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 64D2DA98
+P 5150 2450
+F 0 "#PWR08" H 5150 2200 50  0001 C CNN
+F 1 "GND" H 5155 2277 50  0000 C CNN
+F 2 "" H 5150 2450 50  0001 C CNN
+F 3 "" H 5150 2450 50  0001 C CNN
+	1    5150 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1950 5150 1950
+Wire Wire Line
+	5150 1950 5150 2150
+Wire Wire Line
+	5150 1950 4950 1950
+Connection ~ 5150 1950
+$Comp
+L Device:R R8
+U 1 1 64D3067F
+P 5500 2900
+F 0 "R8" V 5293 2900 50  0000 C CNN
+F 1 "10K" V 5384 2900 50  0000 C CNN
+F 2 "" V 5430 2900 50  0001 C CNN
+F 3 "~" H 5500 2900 50  0001 C CNN
+	1    5500 2900
+	0    1    1    0   
+$EndComp
+Text GLabel 4950 2900 0    50   Input ~ 0
+CLK
+$Comp
+L Device:C_Small C5
+U 1 1 64D30686
+P 5150 3200
+F 0 "C5" H 5242 3246 50  0000 L CNN
+F 1 "10nF" H 5242 3155 50  0000 L CNN
+F 2 "" H 5150 3200 50  0001 C CNN
+F 3 "~" H 5150 3200 50  0001 C CNN
+	1    5150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 64D3068C
+P 5150 3400
+F 0 "#PWR09" H 5150 3150 50  0001 C CNN
+F 1 "GND" H 5155 3227 50  0000 C CNN
+F 2 "" H 5150 3400 50  0001 C CNN
+F 3 "" H 5150 3400 50  0001 C CNN
+	1    5150 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2900 5150 2900
+Wire Wire Line
+	5150 2900 5150 3100
+Wire Wire Line
+	5150 2900 4950 2900
+Connection ~ 5150 2900
+Wire Wire Line
+	6800 2150 6900 2150
+Wire Wire Line
+	6900 2150 6900 2350
+Wire Wire Line
+	6900 2350 6500 2350
+Wire Wire Line
+	6100 2350 6100 2050
+Wire Wire Line
+	6100 2050 6200 2050
+Wire Wire Line
+	5150 2350 5150 2450
+Wire Wire Line
+	5150 3300 5150 3400
+Wire Wire Line
+	6050 2900 6050 2150
+Wire Wire Line
+	6050 2150 6200 2150
+$Comp
+L power:GND #PWR013
+U 1 1 64D33BDA
+P 6500 2450
+F 0 "#PWR013" H 6500 2200 50  0001 C CNN
+F 1 "GND" H 6505 2277 50  0000 C CNN
+F 2 "" H 6500 2450 50  0001 C CNN
+F 3 "" H 6500 2450 50  0001 C CNN
+	1    6500 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2350 6500 2450
+Connection ~ 6500 2350
+Wire Wire Line
+	6500 2350 6100 2350
+$Comp
+L Device:R R14
+U 1 1 64D348AB
+P 7150 1950
+F 0 "R14" V 6943 1950 50  0000 C CNN
+F 1 "10K" V 7034 1950 50  0000 C CNN
+F 2 "" V 7080 1950 50  0001 C CNN
+F 3 "~" H 7150 1950 50  0001 C CNN
+	1    7150 1950
+	0    -1   1    0   
+$EndComp
+Text GLabel 7700 1950 2    50   Input ~ 0
+SW
+$Comp
+L Device:C_Small C7
+U 1 1 64D348B2
+P 7500 2250
+F 0 "C7" H 7592 2296 50  0000 L CNN
+F 1 "10nF" H 7592 2205 50  0000 L CNN
+F 2 "" H 7500 2250 50  0001 C CNN
+F 3 "~" H 7500 2250 50  0001 C CNN
+	1    7500 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 64D348B8
+P 7500 2450
+F 0 "#PWR015" H 7500 2200 50  0001 C CNN
+F 1 "GND" H 7505 2277 50  0000 C CNN
+F 2 "" H 7500 2450 50  0001 C CNN
+F 3 "" H 7500 2450 50  0001 C CNN
+	1    7500 2450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 1950 7500 1950
+Wire Wire Line
+	7500 1950 7500 2150
+Wire Wire Line
+	7500 1950 7700 1950
+Connection ~ 7500 1950
+Wire Wire Line
+	7500 2350 7500 2450
+Wire Wire Line
+	6800 1950 6900 1950
+$Comp
+L Device:R R12
+U 1 1 64D380B4
+P 6800 1250
+F 0 "R12" V 6593 1250 50  0000 C CNN
+F 1 "10K" V 6684 1250 50  0000 C CNN
+F 2 "" V 6730 1250 50  0001 C CNN
+F 3 "~" H 6800 1250 50  0001 C CNN
+	1    6800 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 64D390B5
+P 6500 1250
+F 0 "R11" V 6293 1250 50  0000 C CNN
+F 1 "10K" V 6384 1250 50  0000 C CNN
+F 2 "" V 6430 1250 50  0001 C CNN
+F 3 "~" H 6500 1250 50  0001 C CNN
+	1    6500 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 64D394DF
+P 6200 1250
+F 0 "R9" V 5993 1250 50  0000 C CNN
+F 1 "10K" V 6084 1250 50  0000 C CNN
+F 2 "" V 6130 1250 50  0001 C CNN
+F 3 "~" H 6200 1250 50  0001 C CNN
+	1    6200 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR012
+U 1 1 64D3A1E8
+P 6500 950
+F 0 "#PWR012" H 6500 800 50  0001 C CNN
+F 1 "VCC" H 6515 1123 50  0000 C CNN
+F 2 "" H 6500 950 50  0001 C CNN
+F 3 "" H 6500 950 50  0001 C CNN
+	1    6500 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1950 6050 1950
+Wire Wire Line
+	5650 2900 5900 2900
+Wire Wire Line
+	6800 1100 6500 1100
+Connection ~ 6500 1100
+Wire Wire Line
+	6500 1100 6200 1100
+Wire Wire Line
+	6500 950  6500 1100
+Wire Wire Line
+	6800 1400 6800 1550
+Wire Wire Line
+	6800 1550 6900 1550
+Wire Wire Line
+	6900 1550 6900 1950
+Connection ~ 6900 1950
+Wire Wire Line
+	6900 1950 7000 1950
+Wire Wire Line
+	6500 1700 5900 1700
+Wire Wire Line
+	5900 1700 5900 2900
+Wire Wire Line
+	6500 1400 6500 1700
+Connection ~ 5900 2900
+Wire Wire Line
+	5900 2900 6050 2900
+Wire Wire Line
+	6200 1400 6200 1550
+Wire Wire Line
+	6200 1550 6050 1550
+Wire Wire Line
+	6050 1550 6050 1950
+Connection ~ 6050 1950
+Wire Wire Line
+	6050 1950 6200 1950
+$Comp
+L power:VCC #PWR01
+U 1 1 64D4201B
+P 1500 4550
+F 0 "#PWR01" H 1500 4400 50  0001 C CNN
+F 1 "VCC" H 1515 4723 50  0000 C CNN
+F 2 "" H 1500 4550 50  0001 C CNN
+F 3 "" H 1500 4550 50  0001 C CNN
+	1    1500 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 1350 5050 0    50   Input ~ 0
+Mode
+$Comp
+L Device:R R2
+U 1 1 64D45DC0
+P 1850 5050
+F 0 "R2" V 1643 5050 50  0000 C CNN
+F 1 "220" V 1734 5050 50  0000 C CNN
+F 2 "" V 1780 5050 50  0001 C CNN
+F 3 "~" H 1850 5050 50  0001 C CNN
+	1    1850 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_MEC_5E SW1
+U 1 1 64D46820
+P 2350 5150
+F 0 "SW1" H 2350 5443 50  0000 C CNN
+F 1 "SW_MEC_5E" H 2350 5444 50  0001 C CNN
+F 2 "" H 2350 5450 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 2350 5450 50  0001 C CNN
+	1    2350 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4950 1500 5050
+Wire Wire Line
+	1500 5050 1350 5050
+Wire Wire Line
+	1500 5050 1700 5050
+Connection ~ 1500 5050
+Wire Wire Line
+	2000 5050 2150 5050
+Wire Wire Line
+	2150 5050 2150 5150
+Connection ~ 2150 5050
+$Comp
+L Device:C_Small C1
+U 1 1 64D4B4FA
+P 1500 5250
+F 0 "C1" H 1592 5296 50  0000 L CNN
+F 1 "100nF" H 1592 5205 50  0000 L CNN
+F 2 "" H 1500 5250 50  0001 C CNN
+F 3 "~" H 1500 5250 50  0001 C CNN
+	1    1500 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5050 1500 5150
+Wire Wire Line
+	1500 5350 1500 5450
+Wire Wire Line
+	1500 5450 2050 5450
+Wire Wire Line
+	2550 5450 2550 5150
+Connection ~ 2550 5150
+Wire Wire Line
+	2550 5150 2550 5050
+$Comp
+L power:GND #PWR02
+U 1 1 64D4DB0E
+P 2050 5550
+F 0 "#PWR02" H 2050 5300 50  0001 C CNN
+F 1 "GND" H 2055 5377 50  0000 C CNN
+F 2 "" H 2050 5550 50  0001 C CNN
+F 3 "" H 2050 5550 50  0001 C CNN
+	1    2050 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 5450 2050 5550
+Connection ~ 2050 5450
+Wire Wire Line
+	2050 5450 2550 5450
+Wire Wire Line
+	1500 4650 1500 4550
+$Comp
+L power:VCC #PWR05
+U 1 1 64D53185
+P 3200 4550
+F 0 "#PWR05" H 3200 4400 50  0001 C CNN
+F 1 "VCC" H 3215 4723 50  0000 C CNN
+F 2 "" H 3200 4550 50  0001 C CNN
+F 3 "" H 3200 4550 50  0001 C CNN
+	1    3200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 64D5318B
+P 3200 4800
+F 0 "R3" V 2993 4800 50  0000 C CNN
+F 1 "10K" V 3084 4800 50  0000 C CNN
+F 2 "" V 3130 4800 50  0001 C CNN
+F 3 "~" H 3200 4800 50  0001 C CNN
+	1    3200 4800
+	-1   0    0    -1  
+$EndComp
+Text GLabel 3050 5050 0    50   Input ~ 0
+Menu
+$Comp
+L Device:R R4
+U 1 1 64D53192
+P 3550 5050
+F 0 "R4" V 3343 5050 50  0000 C CNN
+F 1 "220" V 3434 5050 50  0000 C CNN
+F 2 "" V 3480 5050 50  0001 C CNN
+F 3 "~" H 3550 5050 50  0001 C CNN
+	1    3550 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_MEC_5E SW2
+U 1 1 64D53198
+P 4050 5150
+F 0 "SW2" H 4050 5443 50  0000 C CNN
+F 1 "SW_MEC_5E" H 4050 5444 50  0001 C CNN
+F 2 "" H 4050 5450 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 4050 5450 50  0001 C CNN
+	1    4050 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4950 3200 5050
+Wire Wire Line
+	3200 5050 3050 5050
+Wire Wire Line
+	3200 5050 3400 5050
+Connection ~ 3200 5050
+Wire Wire Line
+	3700 5050 3850 5050
+Wire Wire Line
+	3850 5050 3850 5150
+Connection ~ 3850 5050
+$Comp
+L Device:C_Small C2
+U 1 1 64D531A5
+P 3200 5250
+F 0 "C2" H 3292 5296 50  0000 L CNN
+F 1 "100nF" H 3292 5205 50  0000 L CNN
+F 2 "" H 3200 5250 50  0001 C CNN
+F 3 "~" H 3200 5250 50  0001 C CNN
+	1    3200 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 5050 3200 5150
+Wire Wire Line
+	3200 5350 3200 5450
+Wire Wire Line
+	3200 5450 3750 5450
+Wire Wire Line
+	4250 5450 4250 5150
+Connection ~ 4250 5150
+Wire Wire Line
+	4250 5150 4250 5050
+$Comp
+L power:GND #PWR06
+U 1 1 64D531B1
+P 3750 5550
+F 0 "#PWR06" H 3750 5300 50  0001 C CNN
+F 1 "GND" H 3755 5377 50  0000 C CNN
+F 2 "" H 3750 5550 50  0001 C CNN
+F 3 "" H 3750 5550 50  0001 C CNN
+	1    3750 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 5450 3750 5550
+Connection ~ 3750 5450
+Wire Wire Line
+	3750 5450 4250 5450
+Wire Wire Line
+	3200 4650 3200 4550
+$Comp
+L power:VCC #PWR07
+U 1 1 64D56445
+P 4800 4550
+F 0 "#PWR07" H 4800 4400 50  0001 C CNN
+F 1 "VCC" H 4815 4723 50  0000 C CNN
+F 2 "" H 4800 4550 50  0001 C CNN
+F 3 "" H 4800 4550 50  0001 C CNN
+	1    4800 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 64D5644B
+P 4800 4800
+F 0 "R5" V 4593 4800 50  0000 C CNN
+F 1 "10K" V 4684 4800 50  0000 C CNN
+F 2 "" V 4730 4800 50  0001 C CNN
+F 3 "~" H 4800 4800 50  0001 C CNN
+	1    4800 4800
+	-1   0    0    -1  
+$EndComp
+Text GLabel 4650 5050 0    50   Input ~ 0
+Start
+$Comp
+L Device:R R6
+U 1 1 64D56452
+P 5150 5050
+F 0 "R6" V 4943 5050 50  0000 C CNN
+F 1 "220" V 5034 5050 50  0000 C CNN
+F 2 "" V 5080 5050 50  0001 C CNN
+F 3 "~" H 5150 5050 50  0001 C CNN
+	1    5150 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_MEC_5E SW3
+U 1 1 64D56458
+P 5650 5150
+F 0 "SW3" H 5650 5443 50  0000 C CNN
+F 1 "SW_MEC_5E" H 5650 5444 50  0001 C CNN
+F 2 "" H 5650 5450 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 5650 5450 50  0001 C CNN
+	1    5650 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4950 4800 5050
+Wire Wire Line
+	4800 5050 4650 5050
+Wire Wire Line
+	4800 5050 5000 5050
+Connection ~ 4800 5050
+Wire Wire Line
+	5300 5050 5450 5050
+Wire Wire Line
+	5450 5050 5450 5150
+Connection ~ 5450 5050
+$Comp
+L Device:C_Small C3
+U 1 1 64D56465
+P 4800 5250
+F 0 "C3" H 4892 5296 50  0000 L CNN
+F 1 "100nF" H 4892 5205 50  0000 L CNN
+F 2 "" H 4800 5250 50  0001 C CNN
+F 3 "~" H 4800 5250 50  0001 C CNN
+	1    4800 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5050 4800 5150
+Wire Wire Line
+	4800 5350 4800 5450
+Wire Wire Line
+	4800 5450 5350 5450
+Wire Wire Line
+	5850 5450 5850 5150
+Connection ~ 5850 5150
+Wire Wire Line
+	5850 5150 5850 5050
+$Comp
+L power:GND #PWR010
+U 1 1 64D56471
+P 5350 5550
+F 0 "#PWR010" H 5350 5300 50  0001 C CNN
+F 1 "GND" H 5355 5377 50  0000 C CNN
+F 2 "" H 5350 5550 50  0001 C CNN
+F 3 "" H 5350 5550 50  0001 C CNN
+	1    5350 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 5450 5350 5550
+Connection ~ 5350 5450
+Wire Wire Line
+	5350 5450 5850 5450
+Wire Wire Line
+	4800 4650 4800 4550
+$Comp
+L power:VCC #PWR011
+U 1 1 64D595F8
+P 6450 4550
+F 0 "#PWR011" H 6450 4400 50  0001 C CNN
+F 1 "VCC" H 6465 4723 50  0000 C CNN
+F 2 "" H 6450 4550 50  0001 C CNN
+F 3 "" H 6450 4550 50  0001 C CNN
+	1    6450 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 64D595FE
+P 6450 4800
+F 0 "R10" V 6243 4800 50  0000 C CNN
+F 1 "10K" V 6334 4800 50  0000 C CNN
+F 2 "" V 6380 4800 50  0001 C CNN
+F 3 "~" H 6450 4800 50  0001 C CNN
+	1    6450 4800
+	-1   0    0    -1  
+$EndComp
+Text GLabel 6300 5050 0    50   Input ~ 0
+Stop
+$Comp
+L Device:R R13
+U 1 1 64D59605
+P 6800 5050
+F 0 "R13" V 6593 5050 50  0000 C CNN
+F 1 "220" V 6684 5050 50  0000 C CNN
+F 2 "" V 6730 5050 50  0001 C CNN
+F 3 "~" H 6800 5050 50  0001 C CNN
+	1    6800 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_MEC_5E SW5
+U 1 1 64D5960B
+P 7300 5150
+F 0 "SW5" H 7300 5443 50  0000 C CNN
+F 1 "SW_MEC_5E" H 7300 5444 50  0001 C CNN
+F 2 "" H 7300 5450 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 7300 5450 50  0001 C CNN
+	1    7300 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4950 6450 5050
+Wire Wire Line
+	6450 5050 6300 5050
+Wire Wire Line
+	6450 5050 6650 5050
+Connection ~ 6450 5050
+Wire Wire Line
+	6950 5050 7100 5050
+Wire Wire Line
+	7100 5050 7100 5150
+Connection ~ 7100 5050
+$Comp
+L Device:C_Small C6
+U 1 1 64D59618
+P 6450 5250
+F 0 "C6" H 6542 5296 50  0000 L CNN
+F 1 "100nF" H 6542 5205 50  0000 L CNN
+F 2 "" H 6450 5250 50  0001 C CNN
+F 3 "~" H 6450 5250 50  0001 C CNN
+	1    6450 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5050 6450 5150
+Wire Wire Line
+	6450 5350 6450 5450
+Wire Wire Line
+	6450 5450 7000 5450
+Wire Wire Line
+	7500 5450 7500 5150
+Connection ~ 7500 5150
+Wire Wire Line
+	7500 5150 7500 5050
+$Comp
+L power:GND #PWR014
+U 1 1 64D59624
+P 7000 5550
+F 0 "#PWR014" H 7000 5300 50  0001 C CNN
+F 1 "GND" H 7005 5377 50  0000 C CNN
+F 2 "" H 7000 5550 50  0001 C CNN
+F 3 "" H 7000 5550 50  0001 C CNN
+	1    7000 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 5450 7000 5550
+Connection ~ 7000 5450
+Wire Wire Line
+	7000 5450 7500 5450
+Wire Wire Line
+	6450 4650 6450 4550
+$Comp
+L Device:R R1
+U 1 1 64D427FD
+P 1500 4800
+F 0 "R1" V 1293 4800 50  0000 C CNN
+F 1 "10K" V 1384 4800 50  0000 C CNN
+F 2 "" V 1430 4800 50  0001 C CNN
+F 3 "~" H 1500 4800 50  0001 C CNN
+	1    1500 4800
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC

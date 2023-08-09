@@ -1,0 +1,199 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 64D3E388
+P 1500 1200
+F 0 "J1" H 1608 1389 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 1608 1390 50  0001 C CNN
+F 2 "" H 1500 1200 50  0001 C CNN
+F 3 "~" H 1500 1200 50  0001 C CNN
+	1    1500 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR02
+U 1 1 64D3EB16
+P 2000 900
+F 0 "#PWR02" H 2000 750 50  0001 C CNN
+F 1 "VCC" H 2015 1073 50  0000 C CNN
+F 2 "" H 2000 900 50  0001 C CNN
+F 3 "" H 2000 900 50  0001 C CNN
+	1    2000 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 64D3ECB3
+P 1950 1550
+F 0 "#PWR01" H 1950 1300 50  0001 C CNN
+F 1 "GND" H 1955 1377 50  0000 C CNN
+F 2 "" H 1950 1550 50  0001 C CNN
+F 3 "" H 1950 1550 50  0001 C CNN
+	1    1950 1550
+	1    0    0    -1  
+$EndComp
+Text GLabel 1700 1300 2    50   Input ~ 0
+A
+Text GLabel 1700 1400 2    50   Input ~ 0
+ID
+Wire Wire Line
+	1700 1200 2000 1200
+Wire Wire Line
+	2000 1200 2000 900 
+Wire Wire Line
+	1700 1100 1950 1100
+Wire Wire Line
+	1950 1100 1950 1550
+$Comp
+L power:VCC #PWR03
+U 1 1 64D3F596
+P 3000 750
+F 0 "#PWR03" H 3000 600 50  0001 C CNN
+F 1 "VCC" H 3015 923 50  0000 C CNN
+F 2 "" H 3000 750 50  0001 C CNN
+F 3 "" H 3000 750 50  0001 C CNN
+	1    3000 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 64D3F8C1
+P 3000 1600
+F 0 "#PWR04" H 3000 1350 50  0001 C CNN
+F 1 "GND" H 3005 1427 50  0000 C CNN
+F 2 "" H 3000 1600 50  0001 C CNN
+F 3 "" H 3000 1600 50  0001 C CNN
+	1    3000 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 2600 1150 0    50   Input ~ 0
+A
+$Comp
+L Device:R R1
+U 1 1 64D3FD8A
+P 2700 1000
+F 0 "R1" H 2770 1046 50  0000 L CNN
+F 1 "10K" H 2770 955 50  0000 L CNN
+F 2 "" V 2630 1000 50  0001 C CNN
+F 3 "~" H 2700 1000 50  0001 C CNN
+	1    2700 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 64D40BBA
+P 3000 1000
+F 0 "C1" H 3115 1046 50  0000 L CNN
+F 1 "100nF" H 3115 955 50  0000 L CNN
+F 2 "" H 3038 850 50  0001 C CNN
+F 3 "~" H 3000 1000 50  0001 C CNN
+	1    3000 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L sensor-2-library:SIC553-04 U1
+U 1 1 64D410CE
+P 3500 1000
+F 0 "U1" H 3728 901 50  0000 L CNN
+F 1 "SIC553-04" H 3728 810 50  0000 L CNN
+F 2 "" H 3500 1200 50  0001 C CNN
+F 3 "" H 3500 1200 50  0001 C CNN
+	1    3500 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1150 2700 1150
+Connection ~ 2700 1150
+Wire Wire Line
+	2700 1150 3000 1150
+Connection ~ 3000 1150
+Wire Wire Line
+	3000 1150 3300 1150
+Wire Wire Line
+	2700 850  3000 850 
+Wire Wire Line
+	3300 850  3300 1050
+Connection ~ 3000 850 
+Wire Wire Line
+	3000 850  3300 850 
+Wire Wire Line
+	3000 1150 3000 1250
+Wire Wire Line
+	3300 1250 3000 1250
+Connection ~ 3000 1250
+Wire Wire Line
+	3000 1250 3000 1600
+Wire Wire Line
+	3000 850  3000 750 
+$Comp
+L power:VCC #PWR05
+U 1 1 64D422E9
+P 4650 750
+F 0 "#PWR05" H 4650 600 50  0001 C CNN
+F 1 "VCC" H 4665 923 50  0000 C CNN
+F 2 "" H 4650 750 50  0001 C CNN
+F 3 "" H 4650 750 50  0001 C CNN
+	1    4650 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 64D42614
+P 4650 1000
+F 0 "R2" H 4720 1046 50  0000 L CNN
+F 1 "2.2K" H 4720 955 50  0000 L CNN
+F 2 "" V 4580 1000 50  0001 C CNN
+F 3 "~" H 4650 1000 50  0001 C CNN
+	1    4650 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 64D42C3A
+P 4650 1500
+F 0 "R3" H 4720 1546 50  0000 L CNN
+F 1 "2K" H 4720 1455 50  0000 L CNN
+F 2 "" V 4580 1500 50  0001 C CNN
+F 3 "~" H 4650 1500 50  0001 C CNN
+	1    4650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 64D42E03
+P 4650 1750
+F 0 "#PWR06" H 4650 1500 50  0001 C CNN
+F 1 "GND" H 4655 1577 50  0000 C CNN
+F 2 "" H 4650 1750 50  0001 C CNN
+F 3 "" H 4650 1750 50  0001 C CNN
+	1    4650 1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4500 1250 0    50   Input ~ 0
+ID
+Wire Wire Line
+	4650 750  4650 850 
+Wire Wire Line
+	4650 1150 4650 1250
+Wire Wire Line
+	4650 1650 4650 1750
+Wire Wire Line
+	4500 1250 4650 1250
+Connection ~ 4650 1250
+Wire Wire Line
+	4650 1250 4650 1350
+$EndSCHEMATC
